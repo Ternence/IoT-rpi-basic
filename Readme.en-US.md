@@ -8,10 +8,10 @@ folow the next steps:
 
 1. clone the repo in your Raspberry pi
 2. configure the send-ip-mqtt 
-  2.1 Device name
-  2.2 My Topic 
-  2.3 MQTT Broker (some free to test are provided in the script comments) 
-  2.4 customize your message 
+    * Device name
+    * My Topic 
+    * MQTT Broker (some free to test are provided in the script comments) 
+    * customize your message 
 3. npm install to get modules MQTT and IP 
 4. Insert these lines in **/etc/rc.local** (to run on every boot) 
 
