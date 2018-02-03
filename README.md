@@ -1,36 +1,39 @@
 # IoT-rpi-basic
 
-In this repository i will try to put some scripts that help us in prototyping using Raspberry pi. 
+Alguns scripts para ajudar na protitipação usando Raspberry pi. 
 
-To start, an IP monitor. 
+O primeiro do repositório é o monitor de Ips usando MQTT. 
 
-folow the next steps: 
+Siga os seguintes passos: 
 
-1. clone the repo in your Raspberry pi
-2. configure the send-ip-mqtt 
+1. clone o repositório no Raspberry pi
+2. configure o arquivo send-ip-mqtt 
   2.1 Device name
   2.2 My Topic 
-  2.3 MQTT Broker (some free to test are provided in the script comments) 
-  2.4 customize your message 
-3. npm install to get modules MQTT and IP 
-4. Insert these lines in **/etc/rc.local** (to run on every boot) 
+  2.3 MQTT Broker (tem algumas opções nos comentários - Gratuitos para teste) 
+  2.4 personalize as mensagens 
+3. rode no diretório: **npm install** para pegar os modulos MQTT and IP 
+4. insira as linhas abaixo no  **/etc/rc.local** (assim garantimos que vai rodar em todo boot) 
 
     ```
     sleep 30
     su pi -c 'node /home/pi/rpi-101sos/raspberry-pi/send-ip-mqtt.js < /dev/null &'
     ```
-Thats all! 
+Bom isso é tudo! 
 
-to test you can run
+Agora você pode testar no diretório usando: 
 ```
 node send-ip-mqtt.js 
 ```
-and the result should be the same (with your ip) on the MQTT client. 
+o resultado deve ser esse (com o seu ip) em um cliente MQTT de sua preferência. 
 
 ![Messages](https://github.com/jorgemaia/IoT-rpi-basic/blob/master/MQTTrpi.gif "Test Results")
 
 
-** Use MQTT Lens or other to see the results, and don't forget to use the same broker and topic :) **
+**Use o MQTT Lens (estava bugado no último update) ou outro qualquer para ver os resultados, no se esqueça de mudar o Topic e conectar no mesmo broker que usou no send-ip-mqtt.js :)**
 
 
-Now, you can see your ip address without monitor :) 
+Agora temos um monitor de Ips sem a necessidade de termos uma tela! Se tem algum script legal compartilhe conosco. 
+
+Jorge Maia 
+
