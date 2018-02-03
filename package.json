@@ -1,0 +1,31 @@
+{
+  "name": "iot-rpi-basic",
+  "version": "1.0.0",
+  "description": "A little project to help with basic things with rpi and iot projects ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgemaia/IoT-rpi-basic.git"
+  },
+  "keywords": [
+    "raspberry",
+    "iot",
+    "ip",
+    "basic",
+    "commands",
+    "101"
+  ],
+  "author": "Jorge Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgemaia/IoT-rpi-basic/issues"
+  },
+  "homepage": "https://github.com/jorgemaia/IoT-rpi-basic#readme",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "mqtt": "^2.15.1"
+  }
+}
