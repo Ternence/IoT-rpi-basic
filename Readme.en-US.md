@@ -30,7 +30,7 @@ and the result should be the same (with your ip) on the MQTT client.
 ![Messages](https://github.com/jorgemaia/IoT-rpi-basic/blob/master/MQTTrpi.gif "Test Results")
 
 
-** Use MQTT Lens or other to see the results, and don't forget to use the same broker and topic :) **
+**Use MQTT Lens or other to see the results, and don't forget to use the same broker and topic :) **
 
 
 Now, you can see your ip address without monitor :) 
