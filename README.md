@@ -1,4 +1,5 @@
 # IoT-rpi-basic
+**[English Version](https://github.com/jorgemaia/IoT-rpi-basic/blob/master/Readme.en-US.md)**
 
 Alguns scripts para ajudar na protitipação usando Raspberry pi. 
 
